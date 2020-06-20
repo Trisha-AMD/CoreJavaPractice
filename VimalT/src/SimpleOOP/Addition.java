@@ -1,10 +1,10 @@
 package SimpleOOP;
 
 public class Addition {
-	   /* Since we didn't mention any access modifier here, it would
-	    * be considered as default.
-	    */
-	   int addTwoNumbers(int a, int b){
+	   
+	   int addTwoNumbers(int a, int b)  // Since we didn't mention any access modifier in the method here, it would be considered as default.
+	                                                
+	   {
 		return a+b;
-	   }
-	}
+	   }}
+      
