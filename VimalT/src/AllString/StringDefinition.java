@@ -44,8 +44,34 @@ public class StringDefinition
 		String g = s1.concat(s2);
 		System.out.println(g);*/
 		
-		String h = s2.replace("i", "o");
-		System.out.println(h);
+		/*String h = s2.replace("i", "o");
+		System.out.println(h);*/
+		
+		
+		String sb3="java string split method by javatpoint";  
+		String[] words=sb3.split("\\s");//splits the string based on whitespace  
+		//using java foreach loop to print elements of string array  
+		for(String w:words){  
+		System.out.println(w);  
+		
+		
+		
+		}  
+		StringBuilder sb=new StringBuilder("Hello "); 
+		sb.append("Java");//now original string is changed  
+		System.out.println(sb);//printsHello Java  
+		
+		/*String acName = "1233-090-989";
+	
+	    if(acName!=null) {
+	    String [] ac = acName.split("-");
+	   // sb.append(formatXMLElement(COST_CENTER_TAG, ac[1], indent+1));
+	    //sb.append(formatXMLElement(GL_ACCOUNT_TAG, ac[0], indent+1));
+	    for(String a:ac)
+	    {
+	    	System.out.println(a);
+	}*/
+		
 	}
 
 }
