@@ -21,6 +21,7 @@ public class Call {
 		
 		System.out.println(I3.add(56.77, 89.56));
 		
+		System.out.println(I3);
 		
 		Employee test = new Surface();
 		

@@ -13,8 +13,8 @@ package SimpleOOP;
 		//inheritance
 
 		class Two extends One {
-
-/*		@Override
+			
+	    @Override
 
 		public void display() {
 
@@ -34,7 +34,7 @@ package SimpleOOP;
 
 		return x+y;
 
-		}*/
+		}
 
 		}
 
@@ -44,13 +44,15 @@ package SimpleOOP;
 
 		private String name;
 
-		public String getName() {
+		public String getName()
+		{
 
 		return name;
 
 		}
 
-		public void setName(String newName) {
+		public void setName(String newName)
+		{
 
 		name = newName;
 
@@ -88,15 +90,17 @@ package SimpleOOP;
 
 		b.display();
 
-		//System.out.println(b.add(4,2));
+		System.out.println(b.add(4,2));
 
-		//System.out.println(b.add(5.,2.)); //polymorphism
+		System.out.println(b.add(5.,2.)); //polymorphism
 
 		EncapTest encap = new EncapTest();
 
+		System.out.println("Name : " + encap.getName() );// null value
+
 		encap.setName("Sandeep's");
 
-		System.out.print("Name : " + encap.getName() );
+		System.out.println("Name : " + encap.getName() );
 
 		TwoWheeler test = new Honda();
 

@@ -12,12 +12,10 @@ public class ConstructorEG {
 		}
 		
 		ConstructorEG () {
-		
-			
+					
 			this(40,50);          //invoking current class constructor using this keyword
 			System.out.println("One");
 			
-
 		}
 		
 void Display()
@@ -25,13 +23,13 @@ void Display()
 	System.out.println("trisha");
 }
 
-
 	
 public static void main(String args[]) {
 	new ConstructorEG(1,2);
 	
 	//ConstructorEG C1 = new ConstructorEG(1,2);
 	ConstructorEG C2 = new ConstructorEG(22.10, 16.34);
+	ConstructorEG C3 = new ConstructorEG(12.18, 08.39);
 	new ConstructorEG ();
 	C2.Display();
 	
