@@ -43,6 +43,7 @@ public class StringMethods {
 			   
 	      //Substring
 			// s7= java string is immutable so assign it explicitly
+			   System.out.println("-------------------substring()------------------");
 			   System.out.println(s7.substring(6));
 			   System.out.println(s7.substring(0,6));
 	
@@ -130,12 +131,25 @@ public class StringMethods {
                 System.out.println(String.valueOf(obj)); 
                 System.out.println(H.valueOf(s13));
 	//split()
+                System.out.println("-------------------split()------------------");
                 String acNo = "48933-5510-0109-9876";
-                String[] ac = acNo.split("-");
+                String[] ac = acNo.split("-",3);              // String[] split(String regex,int limit)
+
+                
                 for(String w:ac){  
             		System.out.println(w); 
-                }
+            	}
                 
+                String str = "We're Ridiculously Committed! Welcome"; 
+                String[] arrOfStr = str.split(" ");                      //String[] split(String regex)
+
+                 System.out.println("Number of substrings: "+arrOfStr.length);
+   
+               
+                 for(int j=0; j< arrOfStr.length; j++)
+                 {
+                     System.out.println("str["+j+"] : "+arrOfStr[j]);
+                 }
 	
 	
 	
