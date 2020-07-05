@@ -41,9 +41,10 @@ public class ToStringExample {
 	ToStringExample e2=new ToStringExample(02,"Jon","Chicago");
 	e1.Display();
 	e2.Display();
-	System.out.println(e1);//compiler writes here s1.toString()
-	System.out.println(e2);//compiler writes here s2.toString()
+	System.out.println(e1);
+	System.out.println(e2);
+	
 	}
-	}
+}
 
 
