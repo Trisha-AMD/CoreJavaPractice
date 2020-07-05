@@ -151,13 +151,125 @@ public class StringMethods {
                      System.out.println("str["+j+"] : "+arrOfStr[j]);
                  }
 	
-	
-	
+                 //contains(CharSequence s)
+                 System.out.println("------------------contains()------------------");
+                 if(str.contains("We're")) {
+                	 System.out.println("Yes");
+                 }
+                 else
+                	 System.out.println(str);
+                 boolean b = str.contains("We're");
+                 System.out.println(b);
+                 
+                 //endsWith()
+                 System.out.println("------------------endsWith()------------------");
+                 b = str.endsWith("i");
+                 System.out.println(b);
+                 
+                 //getChars()
+                 System.out.println("------------------getChars()------------------");
+                 char sentence[] = new char[25];
+                 str.getChars(0, 20, sentence, 5);
+                 
+                 for (int j=0;j<sentence.length;j++)
+                	 System.out.println(sentence[j]);
+                 
+                 //hashCode()
+                 System.out.println("---------------------Hashcode test of String:");  
+     	        String st="java";  
+     	        System.out.println(st.hashCode());  
+     	        str=str+"tpoint";  
+     	        System.out.println(st.hashCode());                  //String returns new hashcode value when you concat string but StringBuffer returns same.
+     	   
+     	        
+     	        //isEmpty()
+     	       System.out.println("------------------isEmpty()------------------");
+     	        b = str.isEmpty();
+     	        System.out.println(b);
+     	        
+     	        
+     	        //String replace(char old, char new)
+     	       System.out.println("------------------replace()------------------");
+     	       System.out.println(str);
+     	       System.out.println("Replacing all e with u");
+     	       str=str.replace('e', 'u');
+     	       System.out.println(str);
+     	       
+     	       //String replace(CharSequence old, CharSequence new)
+     	      System.out.println("------------------replace()------------------");
+     	      String you = "all in all";
+     	     System.out.println(you);
+   	       System.out.println("Replacing all with out");
+   	       you=you.replace("all", "out");
+   	       System.out.println(you);
+   	       
+   	       
+     	        //startsWith()
+   	    System.out.println("------------------startsWith()------------------");
+   	    b=str.startsWith("W");
+   	    System.out.println(b);
+   	    
+   	    //subSequence()
+   	 System.out.println("------------------subSequence()------------------");
+   	String Str = new String("Welcome to Learing String Java Class");
+
+    System.out.print("Return Value :" );
+    System.out.println(Str.subSequence(0, 10) );
+
+    System.out.print("Return Value :" );
+    System.out.println(Str.subSequence(10, 25) );
+    
+    	//toCharArray()
+    System.out.println("------------------toCharArray()------------------");
+     char Sente[] = new char[40];
+     Sente=Str.toCharArray();
+     for(i=0; i<Sente.length; i++)
+     {
+    	 System.out.println(Sente[i]);
+     }     	        
+     	        
+     	        								
+     	        
+     	        
+     	        
+     	        
+     	        
+     	        
+     	        
+     	        
+     	        
+     	        
+     	        
+//     	        
+     	        
+     	        
+     	        
+     	        
+     	        
+     	        
+     	        
+     	        
+     	//        
+     	        
+     	        
+     	        
+     	        
+     	        
+     	        
+     	        
+     	        
+     	        
+     	        
+     	        
+     	        
+     	        
+     	        
 	}
 	
 	
 	
 		   
 	}
+
 
 
