@@ -32,4 +32,10 @@ public class Call {
 		test2.area(2,7);
 	}
 
+	@Override
+	public String toString() {
+		return "Call [getClass()=" + getClass() + ", hashCode()=" + hashCode() + ", toString()=" + super.toString()
+				+ "]";
+	}
+
 }
